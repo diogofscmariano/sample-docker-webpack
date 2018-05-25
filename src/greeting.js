@@ -1,15 +1,15 @@
 import React from 'react';
 
 export default class Greeting extends React.Component {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  render() {
-    return (  
-      <div className='greeting'>
-        Hello, {this.props.name}!
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className='greeting'>
+                Hello, {this.props.name}!
+            </div>
+        );
+    }
 }

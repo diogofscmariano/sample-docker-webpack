@@ -1,7 +1,8 @@
 web:
   build: .
   ports:
-  - "80:3000"
+  - "8800:3000"
+  - "56745:56745"
   volumes:
   - .:/usr/src/app/:rw
   environment:
@@ -15,5 +16,5 @@ web:
         cp -a /tmp/node_modules /usr/src/app/website; 
       fi && 
       npm install && 
-      /usr/local/bin/node ./index.js
+      /usr/local/bin/node --inspect ./index.js
     '

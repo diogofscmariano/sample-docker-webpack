@@ -35,7 +35,7 @@ if (isDeveloping) {
     res.end();
   });
 } else {
-  const staticPath = path.join(__dirname, 'public/build')
+  const staticPath = path.join(__dirname, 'public/build');
   app.use(express.static(staticPath));
 }
 

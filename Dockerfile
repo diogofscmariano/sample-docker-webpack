@@ -1,4 +1,4 @@
-FROM node:0.12.7
+FROM node:9.11.1
 
 RUN npm install webpack -g
 
